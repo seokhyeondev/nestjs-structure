@@ -6,9 +6,8 @@ import QueryBuilderService from 'src/utils/query.builder';
 import { LoginByEmail_POST_DTO } from '../../auth/models/req/login_by_email.post.dto';
 import { UserList_GET_DTO } from '../models/req/userlist_get.dto';
 import { UserDetail_GET_RES_DTO } from '../models/res/user_detail_get.res.dto';
-import crypto, { BinaryLike } from 'crypto';
 import { User_POST_DTO } from '../models/req/user_post.dto';
-// import * as bcrypt from 'bcrypt';
+const crypto = require('crypto');
 
 @Injectable()
 export class UserService {
